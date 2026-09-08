@@ -1,0 +1,230 @@
+{
+  "schemaVersion": 1,
+  "baseUrl": "https://cdn.jsdelivr.net/gh/Sunstrader/elenya-3d-assets@main/",
+  "defaults": {
+    "desktopHeightVh": 72,
+    "mobileHeightVh": 58,
+    "anchor": "bottom-center",
+    "cameraFov": 28,
+    "animation": "Idle",
+    "fallback": "sprite2d"
+  },
+  "characters": [
+    {
+      "id": "kaelen",
+      "label": "Kaelen",
+      "enabled": false,
+      "model": "characters/kaelen/kaelen.glb",
+      "preview": "previews/kaelen.webp",
+      "scale": 1,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "animations": {
+        "idle": "Idle",
+        "talk": "Talk",
+        "blink": "Blink",
+        "react": "React"
+      }
+    },
+    {
+      "id": "alistair",
+      "label": "Alistair",
+      "enabled": false,
+      "model": "characters/alistair/alistair.glb",
+      "preview": "previews/alistair.webp",
+      "scale": 1,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "animations": {
+        "idle": "Idle",
+        "talk": "Talk",
+        "blink": "Blink",
+        "react": "React"
+      }
+    },
+    {
+      "id": "silas",
+      "label": "Silas",
+      "enabled": false,
+      "model": "characters/silas/silas.glb",
+      "preview": "previews/silas.webp",
+      "scale": 1,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "animations": {
+        "idle": "Idle",
+        "talk": "Talk",
+        "blink": "Blink",
+        "react": "React"
+      }
+    },
+    {
+      "id": "kalthar",
+      "label": "Kalthar",
+      "enabled": false,
+      "model": "characters/kalthar/kalthar.glb",
+      "preview": "previews/kalthar.webp",
+      "scale": 1,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "animations": {
+        "idle": "Idle",
+        "talk": "Talk",
+        "blink": "Blink",
+        "react": "React"
+      }
+    },
+    {
+      "id": "lyra",
+      "label": "Lyra",
+      "enabled": false,
+      "model": "characters/lyra/lyra.glb",
+      "preview": "previews/lyra.webp",
+      "scale": 1,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "animations": {
+        "idle": "Idle",
+        "talk": "Talk",
+        "blink": "Blink",
+        "react": "React"
+      }
+    },
+    {
+      "id": "elenya",
+      "label": "Elenya",
+      "enabled": false,
+      "model": "characters/elenya/elenya.glb",
+      "preview": "previews/elenya.webp",
+      "scale": 1,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "animations": {
+        "idle": "Idle",
+        "talk": "Talk",
+        "blink": "Blink",
+        "react": "React"
+      }
+    },
+    {
+      "id": "aubergiste",
+      "label": "Aubergiste",
+      "enabled": false,
+      "model": "characters/aubergiste/aubergiste.glb",
+      "preview": "previews/aubergiste.webp",
+      "scale": 1,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "animations": {
+        "idle": "Idle",
+        "talk": "Talk",
+        "blink": "Blink",
+        "react": "React"
+      }
+    },
+    {
+      "id": "pretresse",
+      "label": "Pretresse",
+      "enabled": false,
+      "model": "characters/pretresse/pretresse.glb",
+      "preview": "previews/pretresse.webp",
+      "scale": 1,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "animations": {
+        "idle": "Idle",
+        "talk": "Talk",
+        "blink": "Blink",
+        "react": "React"
+      }
+    },
+    {
+      "id": "fen",
+      "label": "Fen",
+      "enabled": false,
+      "model": "characters/fen/fen.glb",
+      "preview": "previews/fen.webp",
+      "scale": 1,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "animations": {
+        "idle": "Idle",
+        "talk": "Talk",
+        "blink": "Blink",
+        "react": "React"
+      }
+    }
+  ]
+}
