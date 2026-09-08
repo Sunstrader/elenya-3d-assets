@@ -1,0 +1,11 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Sources Blender temporaires
+*.blend1
+*.blend2
+*.tmp
+
+# Exports lourds non optimisés
+exports-raw/
