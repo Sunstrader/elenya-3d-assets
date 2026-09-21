@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from pathlib import Path
 from PIL import Image, ImageDraw
+import shutil
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "build" / "modular-preview" / "cast"
@@ -19,6 +20,8 @@ items=[
     ("game-v54/sprites/kaelen.webp","KAELEN"),
     ("game-v54/sprites/alistair.webp","ALISTAIR"),
 ]
+for rel, label in items:
+    shutil.copyfile(ROOT/rel, OUT/(label.lower()+".webp"))
 sheet=Image.new("RGBA",(1080,820),(10,11,16,255))
 for i,(rel,label) in enumerate(items):
     sheet.alpha_composite(card(ROOT/rel,label),(540*i,0))
