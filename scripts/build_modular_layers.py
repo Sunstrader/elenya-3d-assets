@@ -12,6 +12,11 @@ PREVIEW_ROOT = ROOT / "build" / "modular-preview"
 CHARACTERS = {
     "elenya": {
         "source": "game-v54/sprites/elenya.webp",
+        "outfit_sources": {
+            "travel": "game-v54/sprites/elenya.webp",
+            "combat": "game-v56/outfits/elenya/combat.webp",
+            "injured": "game-v56/outfits/elenya/injured.webp",
+        },
         "specs": {
             "head": {"points":[(420,15),(610,15),(645,185),(620,335),(550,410),(455,385),(385,315),(390,140)],"blur":20,"z":30,"className":"rig-head","origin":"50% 78%"},
             "left_arm": {"points":[(330,340),(435,360),(490,500),(440,665),(325,640),(215,575),(185,475),(260,410)],"blur":22,"z":20,"className":"rig-arm-left","origin":"41% 31%"},
@@ -145,8 +150,17 @@ def build_character(character_id, cfg, manifest):
         }
 
     entry = manifest["characters"][character_id]
+    outfit_sources = cfg.get("outfit_sources", {})
     for outfit in ("travel","combat","injured"):
-        entry["outfits"][outfit]["layers"] = layer_defs
+        outfit_entry = entry["outfits"][outfit]
+        outfit_entry["base"] = outfit_sources.get(outfit, cfg["source"])
+        # The hand-cut dedicated rig is aligned to the canonical travel sprite.
+        # Distinct outfit art keeps the automatic soft-rig until dedicated masks
+        # are authored for that exact silhouette.
+        if outfit == "travel":
+            outfit_entry["layers"] = layer_defs
+        else:
+            outfit_entry.pop("layers", None)
     entry["dedicatedRig"] = {
         "version":1,
         "source":cfg["source"],

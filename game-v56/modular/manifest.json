@@ -51,62 +51,10 @@
           }
         },
         "combat": {
-          "base": "game-v54/sprites/elenya.webp",
-          "layers": {
-            "base": {
-              "src": "game-v56/modular/elenya/base.webp",
-              "z": 0,
-              "className": "rig-base",
-              "origin": "50% 100%"
-            },
-            "head": {
-              "src": "game-v56/modular/elenya/head.webp",
-              "z": 30,
-              "className": "rig-head",
-              "origin": "50% 78%"
-            },
-            "left_arm": {
-              "src": "game-v56/modular/elenya/left_arm.webp",
-              "z": 20,
-              "className": "rig-arm-left",
-              "origin": "41% 31%"
-            },
-            "right_arm": {
-              "src": "game-v56/modular/elenya/right_arm.webp",
-              "z": 21,
-              "className": "rig-arm-right",
-              "origin": "63% 32%"
-            }
-          }
+          "base": "game-v56/outfits/elenya/combat.webp"
         },
         "injured": {
-          "base": "game-v54/sprites/elenya.webp",
-          "layers": {
-            "base": {
-              "src": "game-v56/modular/elenya/base.webp",
-              "z": 0,
-              "className": "rig-base",
-              "origin": "50% 100%"
-            },
-            "head": {
-              "src": "game-v56/modular/elenya/head.webp",
-              "z": 30,
-              "className": "rig-head",
-              "origin": "50% 78%"
-            },
-            "left_arm": {
-              "src": "game-v56/modular/elenya/left_arm.webp",
-              "z": 20,
-              "className": "rig-arm-left",
-              "origin": "41% 31%"
-            },
-            "right_arm": {
-              "src": "game-v56/modular/elenya/right_arm.webp",
-              "z": 21,
-              "className": "rig-arm-right",
-              "origin": "63% 32%"
-            }
-          }
+          "base": "game-v56/outfits/elenya/injured.webp"
         }
       },
       "expressions": [
@@ -232,62 +180,10 @@
           }
         },
         "combat": {
-          "base": "game-v54/sprites/kaelen.webp",
-          "layers": {
-            "base": {
-              "src": "game-v56/modular/kaelen/base.webp",
-              "z": 0,
-              "className": "rig-base",
-              "origin": "50% 100%"
-            },
-            "head": {
-              "src": "game-v56/modular/kaelen/head.webp",
-              "z": 30,
-              "className": "rig-head",
-              "origin": "49% 76%"
-            },
-            "left_arm": {
-              "src": "game-v56/modular/kaelen/left_arm.webp",
-              "z": 20,
-              "className": "rig-arm-left",
-              "origin": "34% 28%"
-            },
-            "right_arm": {
-              "src": "game-v56/modular/kaelen/right_arm.webp",
-              "z": 21,
-              "className": "rig-arm-right",
-              "origin": "65% 29%"
-            }
-          }
+          "base": "game-v54/sprites/kaelen.webp"
         },
         "injured": {
-          "base": "game-v54/sprites/kaelen.webp",
-          "layers": {
-            "base": {
-              "src": "game-v56/modular/kaelen/base.webp",
-              "z": 0,
-              "className": "rig-base",
-              "origin": "50% 100%"
-            },
-            "head": {
-              "src": "game-v56/modular/kaelen/head.webp",
-              "z": 30,
-              "className": "rig-head",
-              "origin": "49% 76%"
-            },
-            "left_arm": {
-              "src": "game-v56/modular/kaelen/left_arm.webp",
-              "z": 20,
-              "className": "rig-arm-left",
-              "origin": "34% 28%"
-            },
-            "right_arm": {
-              "src": "game-v56/modular/kaelen/right_arm.webp",
-              "z": 21,
-              "className": "rig-arm-right",
-              "origin": "65% 29%"
-            }
-          }
+          "base": "game-v54/sprites/kaelen.webp"
         }
       },
       "expressions": [
@@ -412,62 +308,10 @@
           }
         },
         "combat": {
-          "base": "game-v54/sprites/alistair.webp",
-          "layers": {
-            "base": {
-              "src": "game-v56/modular/alistair/base.webp",
-              "z": 0,
-              "className": "rig-base",
-              "origin": "50% 100%"
-            },
-            "head": {
-              "src": "game-v56/modular/alistair/head.webp",
-              "z": 30,
-              "className": "rig-head",
-              "origin": "50% 75%"
-            },
-            "left_arm": {
-              "src": "game-v56/modular/alistair/left_arm.webp",
-              "z": 20,
-              "className": "rig-arm-left",
-              "origin": "34% 27%"
-            },
-            "right_arm": {
-              "src": "game-v56/modular/alistair/right_arm.webp",
-              "z": 21,
-              "className": "rig-arm-right",
-              "origin": "66% 27%"
-            }
-          }
+          "base": "game-v54/sprites/alistair.webp"
         },
         "injured": {
-          "base": "game-v54/sprites/alistair.webp",
-          "layers": {
-            "base": {
-              "src": "game-v56/modular/alistair/base.webp",
-              "z": 0,
-              "className": "rig-base",
-              "origin": "50% 100%"
-            },
-            "head": {
-              "src": "game-v56/modular/alistair/head.webp",
-              "z": 30,
-              "className": "rig-head",
-              "origin": "50% 75%"
-            },
-            "left_arm": {
-              "src": "game-v56/modular/alistair/left_arm.webp",
-              "z": 20,
-              "className": "rig-arm-left",
-              "origin": "34% 27%"
-            },
-            "right_arm": {
-              "src": "game-v56/modular/alistair/right_arm.webp",
-              "z": 21,
-              "className": "rig-arm-right",
-              "origin": "66% 27%"
-            }
-          }
+          "base": "game-v54/sprites/alistair.webp"
         }
       },
       "expressions": [
