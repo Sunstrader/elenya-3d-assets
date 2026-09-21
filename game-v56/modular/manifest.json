@@ -63,6 +63,39 @@
           "breath": true,
           "blink": false
         }
+      },
+      "sourceSize": {
+        "width": 1024,
+        "height": 1536
+      },
+      "autoRig": {
+        "enabled": true,
+        "aspectRatio": [
+          2,
+          3
+        ],
+        "regions": {
+          "head": {
+            "clip": "inset(0% 18% 61% 18%)",
+            "origin": "50% 82%"
+          },
+          "torso": {
+            "clip": "inset(27% 14% 31% 14%)",
+            "origin": "50% 76%"
+          },
+          "armLeft": {
+            "clip": "inset(27% 53% 25% 0%)",
+            "origin": "70% 34%"
+          },
+          "armRight": {
+            "clip": "inset(27% 0% 25% 53%)",
+            "origin": "30% 34%"
+          },
+          "lower": {
+            "clip": "inset(57% 10% 0% 10%)",
+            "origin": "50% 4%"
+          }
+        }
       }
     },
     "kaelen": {
@@ -117,6 +150,39 @@
           "breath": true,
           "blink": false
         }
+      },
+      "sourceSize": {
+        "width": 1024,
+        "height": 1536
+      },
+      "autoRig": {
+        "enabled": true,
+        "aspectRatio": [
+          2,
+          3
+        ],
+        "regions": {
+          "head": {
+            "clip": "inset(0% 18% 61% 18%)",
+            "origin": "50% 82%"
+          },
+          "torso": {
+            "clip": "inset(27% 14% 31% 14%)",
+            "origin": "50% 76%"
+          },
+          "armLeft": {
+            "clip": "inset(27% 53% 25% 0%)",
+            "origin": "70% 34%"
+          },
+          "armRight": {
+            "clip": "inset(27% 0% 25% 53%)",
+            "origin": "30% 34%"
+          },
+          "lower": {
+            "clip": "inset(57% 10% 0% 10%)",
+            "origin": "50% 4%"
+          }
+        }
       }
     },
     "alistair": {
@@ -170,6 +236,39 @@
         "react": {
           "breath": true,
           "blink": false
+        }
+      },
+      "sourceSize": {
+        "width": 1024,
+        "height": 1536
+      },
+      "autoRig": {
+        "enabled": true,
+        "aspectRatio": [
+          2,
+          3
+        ],
+        "regions": {
+          "head": {
+            "clip": "inset(0% 18% 61% 18%)",
+            "origin": "50% 82%"
+          },
+          "torso": {
+            "clip": "inset(27% 14% 31% 14%)",
+            "origin": "50% 76%"
+          },
+          "armLeft": {
+            "clip": "inset(27% 53% 25% 0%)",
+            "origin": "70% 34%"
+          },
+          "armRight": {
+            "clip": "inset(27% 0% 25% 53%)",
+            "origin": "30% 34%"
+          },
+          "lower": {
+            "clip": "inset(57% 10% 0% 10%)",
+            "origin": "50% 4%"
+          }
         }
       }
     }
