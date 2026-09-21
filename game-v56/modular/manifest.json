@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "baseUrl": "https://cdn.jsdelivr.net/gh/Sunstrader/elenya-3d-assets@1ade36b53ae09b7598efdb4ce40a7929a189e460/",
+  "baseUrl": "https://cdn.jsdelivr.net/gh/Sunstrader/elenya-3d-assets@c19cdad7793a363fea24b93a4e75482b838d595f/",
   "system": "elenya-modular-2d",
   "defaults": {
     "enabled": true,
@@ -56,6 +56,11 @@
         "injured": {
           "base": "game-v56/outfits/elenya/injured.webp"
         }
+      },
+      "expressionLayers": {
+        "soft": "game-v56/expressions/elenya/soft.webp",
+        "worried": "game-v56/expressions/elenya/worried.webp",
+        "determined": "game-v56/expressions/elenya/determined.webp"
       },
       "expressions": [
         "neutral",
