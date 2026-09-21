@@ -1,0 +1,89 @@
+name: Generate mobile ending videos
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/generate-mobile-endings.yml'
+      - 'game-v55/endings/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout assets
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Ensure FFmpeg
+        shell: bash
+        run: |
+          if ! command -v ffmpeg >/dev/null 2>&1; then
+            sudo apt-get update
+            sudo apt-get install -y ffmpeg
+          fi
+          ffmpeg -version | head -n 1
+
+      - name: Generate 9x16 mobile endings
+        shell: bash
+        run: |
+          set -euo pipefail
+          src_dir="game-v55/endings"
+          dst_dir="game-v55/endings-mobile"
+          mkdir -p "$dst_dir"
+
+          shopt -s nullglob
+          sources=("$src_dir"/*.mp4)
+          if [ "${#sources[@]}" -ne 33 ]; then
+            echo "Expected 33 source endings, found ${#sources[@]}"
+            exit 1
+          fi
+
+          for src in "${sources[@]}"; do
+            name="$(basename "$src")"
+            dst="$dst_dir/$name"
+            echo "Rendering $name -> 720x1280"
+            ffmpeg -hide_banner -loglevel error -y \
+              -i "$src" \
+              -map 0:v:0 -map 0:a? \
+              -vf "scale=720:1280:force_original_aspect_ratio=increase,crop=720:1280,setsar=1" \
+              -c:v libx264 -preset veryfast -crf 21 -pix_fmt yuv420p \
+              -c:a aac -b:a 128k \
+              -movflags +faststart \
+              "$dst"
+          done
+
+      - name: Validate outputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          dst_dir="game-v55/endings-mobile"
+          count="$(find "$dst_dir" -maxdepth 1 -type f -name '*.mp4' | wc -l | tr -d ' ')"
+          test "$count" = "33"
+
+          while IFS= read -r file; do
+            dims="$(ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=s=x:p=0 "$file")"
+            if [ "$dims" != "720x1280" ]; then
+              echo "Invalid dimensions for $file: $dims"
+              exit 1
+            fi
+          done < <(find "$dst_dir" -maxdepth 1 -type f -name '*.mp4' | sort)
+
+      - name: Commit generated mobile videos
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add game-v55/endings-mobile
+          if git diff --cached --quiet; then
+            echo "Mobile endings already up to date."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "assets: generate 9x16 mobile ending videos"
+          git push
