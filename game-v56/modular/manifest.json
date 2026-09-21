@@ -293,5 +293,22 @@
         "activeSeconds": 4.8
       }
     }
+  },
+  "referenceBoards": {
+    "elenyaKaelen": {
+      "webp": "game-v53/interactions/elenya-kaelen-poses.webp",
+      "png": "game-v53/interactions/elenya-kaelen-poses.png",
+      "usage": "canonical-contact-and-romance-pose-reference"
+    },
+    "elenyaAlistair": {
+      "webp": "game-v53/interactions/elenya-alistair-poses.webp",
+      "png": "game-v53/interactions/elenya-alistair-poses.png",
+      "usage": "canonical-contact-and-romance-pose-reference"
+    },
+    "elenyaFen": {
+      "webp": "game-v53/interactions/elenya-fen-poses.webp",
+      "png": "game-v53/interactions/elenya-fen-poses.png",
+      "usage": "canonical-contact-pose-reference"
+    }
   }
 }
