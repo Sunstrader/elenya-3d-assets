@@ -24,17 +24,17 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: elenya-modular-layer-preview
-          path: build/modular-preview/elenya/
+          path: build/modular-preview/
           if-no-files-found: error
       - name: Commit generated Elenya layers
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add game-v56/modular/elenya/ game-v56/modular/manifest.json
+          git add game-v56/modular/elenya/ game-v56/modular/kaelen/ game-v56/modular/alistair/ game-v56/modular/manifest.json
           if git diff --cached --quiet; then
             echo "No generated asset changes."
           else
-            git commit -m "assets: generate soft modular layers for Elenya"
+            git commit -m "assets: generate soft modular layers for core trio"
             git push origin HEAD:${{ github.head_ref }}
           fi
