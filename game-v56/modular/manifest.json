@@ -96,6 +96,13 @@
             "origin": "50% 4%"
           }
         }
+      },
+      "motionProfile": {
+        "headLiftPx": 1.7,
+        "torsoScale": 1.006,
+        "armLiftPx": 1,
+        "idleSeconds": 6.2,
+        "activeSeconds": 4.6
       }
     },
     "kaelen": {
@@ -183,6 +190,13 @@
             "origin": "50% 4%"
           }
         }
+      },
+      "motionProfile": {
+        "headLiftPx": 1.1,
+        "torsoScale": 1.004,
+        "armLiftPx": 0.6,
+        "idleSeconds": 6.8,
+        "activeSeconds": 5.2
       }
     },
     "alistair": {
@@ -270,6 +284,13 @@
             "origin": "50% 4%"
           }
         }
+      },
+      "motionProfile": {
+        "headLiftPx": 1.5,
+        "torsoScale": 1.0065,
+        "armLiftPx": 1,
+        "idleSeconds": 6,
+        "activeSeconds": 4.8
       }
     }
   }
