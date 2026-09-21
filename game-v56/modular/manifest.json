@@ -204,15 +204,90 @@
       "outfits": {
         "travel": {
           "base": "game-v54/sprites/kaelen.webp",
-          "layers": {}
+          "layers": {
+            "base": {
+              "src": "game-v56/modular/kaelen/base.webp",
+              "z": 0,
+              "className": "rig-base",
+              "origin": "50% 100%"
+            },
+            "head": {
+              "src": "game-v56/modular/kaelen/head.webp",
+              "z": 30,
+              "className": "rig-head",
+              "origin": "49% 76%"
+            },
+            "left_arm": {
+              "src": "game-v56/modular/kaelen/left_arm.webp",
+              "z": 20,
+              "className": "rig-arm-left",
+              "origin": "34% 28%"
+            },
+            "right_arm": {
+              "src": "game-v56/modular/kaelen/right_arm.webp",
+              "z": 21,
+              "className": "rig-arm-right",
+              "origin": "65% 29%"
+            }
+          }
         },
         "combat": {
           "base": "game-v54/sprites/kaelen.webp",
-          "layers": {}
+          "layers": {
+            "base": {
+              "src": "game-v56/modular/kaelen/base.webp",
+              "z": 0,
+              "className": "rig-base",
+              "origin": "50% 100%"
+            },
+            "head": {
+              "src": "game-v56/modular/kaelen/head.webp",
+              "z": 30,
+              "className": "rig-head",
+              "origin": "49% 76%"
+            },
+            "left_arm": {
+              "src": "game-v56/modular/kaelen/left_arm.webp",
+              "z": 20,
+              "className": "rig-arm-left",
+              "origin": "34% 28%"
+            },
+            "right_arm": {
+              "src": "game-v56/modular/kaelen/right_arm.webp",
+              "z": 21,
+              "className": "rig-arm-right",
+              "origin": "65% 29%"
+            }
+          }
         },
         "injured": {
           "base": "game-v54/sprites/kaelen.webp",
-          "layers": {}
+          "layers": {
+            "base": {
+              "src": "game-v56/modular/kaelen/base.webp",
+              "z": 0,
+              "className": "rig-base",
+              "origin": "50% 100%"
+            },
+            "head": {
+              "src": "game-v56/modular/kaelen/head.webp",
+              "z": 30,
+              "className": "rig-head",
+              "origin": "49% 76%"
+            },
+            "left_arm": {
+              "src": "game-v56/modular/kaelen/left_arm.webp",
+              "z": 20,
+              "className": "rig-arm-left",
+              "origin": "34% 28%"
+            },
+            "right_arm": {
+              "src": "game-v56/modular/kaelen/right_arm.webp",
+              "z": 21,
+              "className": "rig-arm-right",
+              "origin": "65% 29%"
+            }
+          }
         }
       },
       "expressions": [
@@ -283,6 +358,17 @@
         "armLiftPx": 0.6,
         "idleSeconds": 6.8,
         "activeSeconds": 5.2
+      },
+      "dedicatedRig": {
+        "version": 1,
+        "source": "game-v54/sprites/kaelen.webp",
+        "restReconstructionMaxError": 1,
+        "parts": [
+          "base",
+          "head",
+          "left_arm",
+          "right_arm"
+        ]
       }
     },
     "alistair": {
@@ -298,15 +384,90 @@
       "outfits": {
         "travel": {
           "base": "game-v54/sprites/alistair.webp",
-          "layers": {}
+          "layers": {
+            "base": {
+              "src": "game-v56/modular/alistair/base.webp",
+              "z": 0,
+              "className": "rig-base",
+              "origin": "50% 100%"
+            },
+            "head": {
+              "src": "game-v56/modular/alistair/head.webp",
+              "z": 30,
+              "className": "rig-head",
+              "origin": "50% 75%"
+            },
+            "left_arm": {
+              "src": "game-v56/modular/alistair/left_arm.webp",
+              "z": 20,
+              "className": "rig-arm-left",
+              "origin": "34% 27%"
+            },
+            "right_arm": {
+              "src": "game-v56/modular/alistair/right_arm.webp",
+              "z": 21,
+              "className": "rig-arm-right",
+              "origin": "66% 27%"
+            }
+          }
         },
         "combat": {
           "base": "game-v54/sprites/alistair.webp",
-          "layers": {}
+          "layers": {
+            "base": {
+              "src": "game-v56/modular/alistair/base.webp",
+              "z": 0,
+              "className": "rig-base",
+              "origin": "50% 100%"
+            },
+            "head": {
+              "src": "game-v56/modular/alistair/head.webp",
+              "z": 30,
+              "className": "rig-head",
+              "origin": "50% 75%"
+            },
+            "left_arm": {
+              "src": "game-v56/modular/alistair/left_arm.webp",
+              "z": 20,
+              "className": "rig-arm-left",
+              "origin": "34% 27%"
+            },
+            "right_arm": {
+              "src": "game-v56/modular/alistair/right_arm.webp",
+              "z": 21,
+              "className": "rig-arm-right",
+              "origin": "66% 27%"
+            }
+          }
         },
         "injured": {
           "base": "game-v54/sprites/alistair.webp",
-          "layers": {}
+          "layers": {
+            "base": {
+              "src": "game-v56/modular/alistair/base.webp",
+              "z": 0,
+              "className": "rig-base",
+              "origin": "50% 100%"
+            },
+            "head": {
+              "src": "game-v56/modular/alistair/head.webp",
+              "z": 30,
+              "className": "rig-head",
+              "origin": "50% 75%"
+            },
+            "left_arm": {
+              "src": "game-v56/modular/alistair/left_arm.webp",
+              "z": 20,
+              "className": "rig-arm-left",
+              "origin": "34% 27%"
+            },
+            "right_arm": {
+              "src": "game-v56/modular/alistair/right_arm.webp",
+              "z": 21,
+              "className": "rig-arm-right",
+              "origin": "66% 27%"
+            }
+          }
         }
       },
       "expressions": [
@@ -377,6 +538,17 @@
         "armLiftPx": 1,
         "idleSeconds": 6,
         "activeSeconds": 4.8
+      },
+      "dedicatedRig": {
+        "version": 1,
+        "source": "game-v54/sprites/alistair.webp",
+        "restReconstructionMaxError": 1,
+        "parts": [
+          "base",
+          "head",
+          "left_arm",
+          "right_arm"
+        ]
       }
     }
   },

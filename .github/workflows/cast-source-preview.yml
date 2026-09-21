@@ -1,0 +1,26 @@
+name: Cast Source Preview
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/preview_cast_sources.py'
+      - '.github/workflows/cast-source-preview.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --disable-pip-version-check pillow
+      - run: python scripts/preview_cast_sources.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: kaelen-alistair-source-preview
+          path: build/modular-preview/cast/
+          if-no-files-found: error
