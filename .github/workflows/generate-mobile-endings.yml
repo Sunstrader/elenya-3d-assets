@@ -48,14 +48,7 @@ jobs:
             name="$(basename "$src")"
             dst="$dst_dir/$name"
             echo "Rendering $name -> 720x1280"
-            ffmpeg -hide_banner -loglevel error -y \
-              -i "$src" \
-              -map 0:v:0 -map 0:a? \
-              -vf "scale=720:1280:force_original_aspect_ratio=increase,crop=720:1280,setsar=1" \
-              -c:v libx264 -preset veryfast -crf 21 -pix_fmt yuv420p \
-              -c:a aac -b:a 128k \
-              -movflags +faststart \
-              "$dst"
+            ffmpeg -hide_banner -loglevel error -y -i "$src" -vf "scale=720:1280:force_original_aspect_ratio=increase,crop=720:1280,setsar=1" -c:v libx264 -preset veryfast -crf 21 -pix_fmt yuv420p -c:a aac -b:a 128k -movflags +faststart "$dst"
           done
 
       - name: Validate outputs
