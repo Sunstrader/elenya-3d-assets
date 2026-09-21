@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "baseUrl": "https://cdn.jsdelivr.net/gh/Sunstrader/elenya-3d-assets@main/",
+  "system": "elenya-modular-2d",
+  "defaults": {
+    "enabled": true,
+    "animation": "idle",
+    "outfit": "base",
+    "expression": "neutral",
+    "pose": "idle"
+  },
+  "characters": {
+    "elenya": {
+      "enabled": true,
+      "label": "Elenya",
+      "fallback": "game-v54/sprites/elenya.webp",
+      "defaultState": {
+        "outfit": "travel",
+        "expression": "neutral",
+        "pose": "idle",
+        "animation": "idle"
+      },
+      "outfits": {
+        "travel": {
+          "base": "game-v54/sprites/elenya.webp",
+          "layers": {}
+        },
+        "combat": {
+          "base": "game-v54/sprites/elenya.webp",
+          "layers": {}
+        },
+        "injured": {
+          "base": "game-v54/sprites/elenya.webp",
+          "layers": {}
+        }
+      },
+      "expressions": [
+        "neutral",
+        "soft",
+        "worried",
+        "determined",
+        "angry",
+        "hurt",
+        "surprised"
+      ],
+      "poses": [
+        "idle",
+        "guarded",
+        "open",
+        "combat",
+        "injured"
+      ],
+      "animations": {
+        "idle": {
+          "breath": true,
+          "blink": true
+        },
+        "talk": {
+          "breath": true,
+          "blink": true
+        },
+        "react": {
+          "breath": true,
+          "blink": false
+        }
+      }
+    },
+    "kaelen": {
+      "enabled": true,
+      "label": "Kaelen",
+      "fallback": "game-v54/sprites/kaelen.webp",
+      "defaultState": {
+        "outfit": "travel",
+        "expression": "neutral",
+        "pose": "idle",
+        "animation": "idle"
+      },
+      "outfits": {
+        "travel": {
+          "base": "game-v54/sprites/kaelen.webp",
+          "layers": {}
+        },
+        "combat": {
+          "base": "game-v54/sprites/kaelen.webp",
+          "layers": {}
+        },
+        "injured": {
+          "base": "game-v54/sprites/kaelen.webp",
+          "layers": {}
+        }
+      },
+      "expressions": [
+        "neutral",
+        "cold",
+        "soft",
+        "angry",
+        "hurt",
+        "surprised"
+      ],
+      "poses": [
+        "idle",
+        "guarded",
+        "open",
+        "combat",
+        "injured"
+      ],
+      "animations": {
+        "idle": {
+          "breath": true,
+          "blink": true
+        },
+        "talk": {
+          "breath": true,
+          "blink": true
+        },
+        "react": {
+          "breath": true,
+          "blink": false
+        }
+      }
+    },
+    "alistair": {
+      "enabled": true,
+      "label": "Alistair",
+      "fallback": "game-v54/sprites/alistair.webp",
+      "defaultState": {
+        "outfit": "travel",
+        "expression": "neutral",
+        "pose": "idle",
+        "animation": "idle"
+      },
+      "outfits": {
+        "travel": {
+          "base": "game-v54/sprites/alistair.webp",
+          "layers": {}
+        },
+        "combat": {
+          "base": "game-v54/sprites/alistair.webp",
+          "layers": {}
+        },
+        "injured": {
+          "base": "game-v54/sprites/alistair.webp",
+          "layers": {}
+        }
+      },
+      "expressions": [
+        "neutral",
+        "warm",
+        "serious",
+        "angry",
+        "hurt",
+        "surprised"
+      ],
+      "poses": [
+        "idle",
+        "guarded",
+        "open",
+        "combat",
+        "injured"
+      ],
+      "animations": {
+        "idle": {
+          "breath": true,
+          "blink": true
+        },
+        "talk": {
+          "breath": true,
+          "blink": true
+        },
+        "react": {
+          "breath": true,
+          "blink": false
+        }
+      }
+    }
+  }
+}
