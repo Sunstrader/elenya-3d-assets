@@ -23,15 +23,90 @@
       "outfits": {
         "travel": {
           "base": "game-v54/sprites/elenya.webp",
-          "layers": {}
+          "layers": {
+            "base": {
+              "src": "game-v56/modular/elenya/base.webp",
+              "z": 0,
+              "className": "rig-base",
+              "origin": "50% 100%"
+            },
+            "head": {
+              "src": "game-v56/modular/elenya/head.webp",
+              "z": 30,
+              "className": "rig-head",
+              "origin": "50% 78%"
+            },
+            "left_arm": {
+              "src": "game-v56/modular/elenya/left_arm.webp",
+              "z": 20,
+              "className": "rig-arm-left",
+              "origin": "41% 31%"
+            },
+            "right_arm": {
+              "src": "game-v56/modular/elenya/right_arm.webp",
+              "z": 21,
+              "className": "rig-arm-right",
+              "origin": "63% 32%"
+            }
+          }
         },
         "combat": {
           "base": "game-v54/sprites/elenya.webp",
-          "layers": {}
+          "layers": {
+            "base": {
+              "src": "game-v56/modular/elenya/base.webp",
+              "z": 0,
+              "className": "rig-base",
+              "origin": "50% 100%"
+            },
+            "head": {
+              "src": "game-v56/modular/elenya/head.webp",
+              "z": 30,
+              "className": "rig-head",
+              "origin": "50% 78%"
+            },
+            "left_arm": {
+              "src": "game-v56/modular/elenya/left_arm.webp",
+              "z": 20,
+              "className": "rig-arm-left",
+              "origin": "41% 31%"
+            },
+            "right_arm": {
+              "src": "game-v56/modular/elenya/right_arm.webp",
+              "z": 21,
+              "className": "rig-arm-right",
+              "origin": "63% 32%"
+            }
+          }
         },
         "injured": {
           "base": "game-v54/sprites/elenya.webp",
-          "layers": {}
+          "layers": {
+            "base": {
+              "src": "game-v56/modular/elenya/base.webp",
+              "z": 0,
+              "className": "rig-base",
+              "origin": "50% 100%"
+            },
+            "head": {
+              "src": "game-v56/modular/elenya/head.webp",
+              "z": 30,
+              "className": "rig-head",
+              "origin": "50% 78%"
+            },
+            "left_arm": {
+              "src": "game-v56/modular/elenya/left_arm.webp",
+              "z": 20,
+              "className": "rig-arm-left",
+              "origin": "41% 31%"
+            },
+            "right_arm": {
+              "src": "game-v56/modular/elenya/right_arm.webp",
+              "z": 21,
+              "className": "rig-arm-right",
+              "origin": "63% 32%"
+            }
+          }
         }
       },
       "expressions": [
@@ -103,6 +178,17 @@
         "armLiftPx": 1,
         "idleSeconds": 6.2,
         "activeSeconds": 4.6
+      },
+      "dedicatedRig": {
+        "version": 1,
+        "source": "game-v54/sprites/elenya.webp",
+        "restReconstructionMaxError": 1,
+        "parts": [
+          "base",
+          "head",
+          "left_arm",
+          "right_arm"
+        ]
       }
     },
     "kaelen": {
