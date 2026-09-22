@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "baseUrl": "https://cdn.jsdelivr.net/gh/Sunstrader/elenya-3d-assets@1a198c89fbe1e5806a7bebe4ac879ede48e96a81/",
+  "baseUrl": "https://cdn.jsdelivr.net/gh/Sunstrader/elenya-3d-assets@b3685270debdfb364c81e93fdc66ed2a00a409ab/",
   "system": "elenya-modular-2d",
   "defaults": {
     "enabled": true,
