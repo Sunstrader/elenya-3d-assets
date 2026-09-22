@@ -142,7 +142,8 @@
           "left_arm",
           "right_arm"
         ]
-      }
+      },
+      "blinkLayer": "game-v56/expressions/elenya/blink.webp"
     },
     "kaelen": {
       "enabled": true,
@@ -277,7 +278,8 @@
         "angry": "game-v56/expressions/kaelen/angry.webp",
         "hurt": "game-v56/expressions/kaelen/hurt.webp",
         "surprised": "game-v56/expressions/kaelen/surprised.webp"
-      }
+      },
+      "blinkLayer": "game-v56/expressions/kaelen/blink.webp"
     },
     "alistair": {
       "enabled": true,
@@ -412,7 +414,8 @@
         "angry": "game-v56/expressions/alistair/angry.webp",
         "hurt": "game-v56/expressions/alistair/hurt.webp",
         "surprised": "game-v56/expressions/alistair/surprised.webp"
-      }
+      },
+      "blinkLayer": "game-v56/expressions/alistair/blink.webp"
     }
   },
   "referenceBoards": {
