@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "baseUrl": "https://cdn.jsdelivr.net/gh/Sunstrader/elenya-3d-assets@c19cdad7793a363fea24b93a4e75482b838d595f/",
+  "baseUrl": "https://cdn.jsdelivr.net/gh/Sunstrader/elenya-3d-assets@1a198c89fbe1e5806a7bebe4ac879ede48e96a81/",
   "system": "elenya-modular-2d",
   "defaults": {
     "enabled": true,
@@ -185,10 +185,10 @@
           }
         },
         "combat": {
-          "base": "game-v54/sprites/kaelen.webp"
+          "base": "game-v56/outfits/kaelen/combat.webp"
         },
         "injured": {
-          "base": "game-v54/sprites/kaelen.webp"
+          "base": "game-v56/outfits/kaelen/injured.webp"
         }
       },
       "expressions": [
@@ -270,6 +270,13 @@
           "left_arm",
           "right_arm"
         ]
+      },
+      "expressionLayers": {
+        "cold": "game-v56/expressions/kaelen/cold.webp",
+        "soft": "game-v56/expressions/kaelen/soft.webp",
+        "angry": "game-v56/expressions/kaelen/angry.webp",
+        "hurt": "game-v56/expressions/kaelen/hurt.webp",
+        "surprised": "game-v56/expressions/kaelen/surprised.webp"
       }
     },
     "alistair": {
@@ -313,10 +320,10 @@
           }
         },
         "combat": {
-          "base": "game-v54/sprites/alistair.webp"
+          "base": "game-v56/outfits/alistair/combat.webp"
         },
         "injured": {
-          "base": "game-v54/sprites/alistair.webp"
+          "base": "game-v56/outfits/alistair/injured.webp"
         }
       },
       "expressions": [
@@ -398,6 +405,13 @@
           "left_arm",
           "right_arm"
         ]
+      },
+      "expressionLayers": {
+        "warm": "game-v56/expressions/alistair/warm.webp",
+        "serious": "game-v56/expressions/alistair/serious.webp",
+        "angry": "game-v56/expressions/alistair/angry.webp",
+        "hurt": "game-v56/expressions/alistair/hurt.webp",
+        "surprised": "game-v56/expressions/alistair/surprised.webp"
       }
     }
   },
